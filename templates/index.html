@@ -1,0 +1,31 @@
+{% load bootstrap4 %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tinga | It's Lit</title>
+  {% block styles %}
+  {% bootstrap_css %}
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+  <link rel="stylesheet" href="{% static 'css/categories.css' %}">
+
+  {% endblock %}
+</head>
+
+<body>
+  {% include 'navbar.html' %}
+
+  <div id="main-intro">
+    <div class="overlay">
+    </div>
+    {% include 'intro.html' %}
+  </div>
+  <div class="categories container">
+    {% include 'categories.html' %}
+  </div>
+</body>
+
+</html>

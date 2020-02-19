@@ -1,0 +1,5 @@
+*.pyc
+env/
+virtual/
+requirements.txt
+migrations/

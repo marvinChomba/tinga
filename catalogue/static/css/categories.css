@@ -1,0 +1,35 @@
+.category {
+  position: relative;
+  cursor: pointer;
+}
+
+.category :hover {
+  transform: translateY(20);
+  transition: all 1;
+}
+
+.custom-card {
+  border-radius: 4%;
+  height: 170px;
+  background: url("https://images.pexels.com/photos/159375/construction-site-build-construction-work-159375.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+.d-overlay {
+  height: 100%;
+  background: #000;
+  opacity: 0.4;
+}
+
+.cat-details {
+  position: absolute;
+  top: 0;
+  color: white;
+}
+
+.listings {
+  color: #FF6600;
+}
