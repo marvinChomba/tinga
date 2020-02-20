@@ -7,15 +7,17 @@
   </div>
   <div class="row mt-3">
     {% for cat in categories %}
+    {% with total=cat.equipments.count %}
     <div class="col-sm-10 col-md-5 col-lg-3 mb-4 category">
       <div class="custom-card">
         <div class="d-overlay"></div>
       </div>
-      <div class="cat-details w-50 h-100  d-flex justify-content-end flex-column align-items-center">
-        <p class="">{{ cat.name }}</p>
-        <p class="mt-0 text-center">(2 listings)</p>
+      <div class="cat-details w-50 h-100 pl-3  d-flex justify-content-end flex-column ">
+        <p class=""><a href="{% url 'single_cat' cat.id %}" class="text-white">{{ cat.name }}</a></p>
+        <p class="mt-0">({{ total }} listing{{ total|pluralize }})</p>
       </div>
     </div>
+    {% endwith %}
     {% endfor %}
   </div>
 </div>

@@ -1,0 +1,45 @@
+{% load bootstrap4 %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tinga | {{ category.name }}</title>
+  {% block styles %}
+  {% bootstrap_css %}
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'css/equipment.css' %}">
+  <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+  {% endblock %}
+</head>
+
+<body>
+  {% include 'navbar.html' %}
+  <div class="container pt-4">
+    <h2 class="text-center">{{ category.name }}</h2>
+    {% if category.equipments.all %}
+    <p class="lead">Here is a list of {{ category.name }} that we have.</p>
+
+    <div class="row container d-flex justify-content-between">
+      {% for eq in category.equipments.all %}
+      <div class="eq-card mb-3">
+        <img
+          src="https://images.pexels.com/photos/1029243/pexels-photo-1029243.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      {% endfor%}
+    </div>
+    {% else %}
+    <p class="lead">There are no equipments at the moment.</p>
+    {% endif %}
+  </div>
+</body>
+
+</html>

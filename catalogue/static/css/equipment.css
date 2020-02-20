@@ -1,0 +1,9 @@
+body {
+  background: #f0f0f0
+}
+
+.eq-card {
+  width: 27%;
+  border-radius: 2%;
+  background: white;
+}

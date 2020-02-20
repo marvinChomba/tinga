@@ -17,10 +17,13 @@ class Equipment(models.Model):
         Category, related_name="equipments", on_delete=models.CASCADE)
     availability = models.BooleanField(default=False)
 
+    def __str__(self):
+        return self.name
+
 
 class Images(models.Model):
     image = models.ImageField(blank=True)
     equipment = models.ForeignKey(Equipment, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name
+        return self.equipment.name
