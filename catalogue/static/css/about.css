@@ -1,0 +1,16 @@
+.about {
+  height: 400px;
+}
+
+.about .text {
+  background: #f0f0f0;
+  padding: 15px;
+  padding-left: 40px;
+}
+
+.about .image {
+  background: url("https://images.pexels.com/photos/1145434/pexels-photo-1145434.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

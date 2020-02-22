@@ -1,7 +1,29 @@
 .category {
   position: relative;
   cursor: pointer;
+
 }
+
+@media(max-width:700px) {
+  .category {
+    width: 100%;
+    display: flex;
+    justify-content: center;                                  
+  }
+
+  .custom-card {
+    width: 92%;                                                                           
+    border-radius: 0;                       
+  }
+}
+
+/* @media(max-width: 900px) {
+  .category {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+} */
 
 .category :hover {
   transform: translateY(20);

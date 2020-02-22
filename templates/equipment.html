@@ -4,6 +4,10 @@
 <html>
 
 <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tinga | {{ category.name }}</title>
   {% block styles %}
   {% bootstrap_css %}
@@ -16,16 +20,16 @@
 
 <body>
   {% include 'navbar.html' %}
-  <div class="container pt-4">
+  <div class="container d-flex flex-column align-items-center my-4">
     <h2 class="text-center">{{ category.name }}</h2>
     {% if category.equipments.all %}
-    <p class="lead">Here is a list of {{ category.name }} that we have.</p>
+    <p class="lead">Here is a list of {{ category.name }}(s) that we have.</p>
 
-    <div class="row container d-flex justify-content-between">
+    <div class="row w-100 eq-row">
       {% for eq in category.equipments.all %}
-      <div class="eq-card mb-3">
+      <div class="eq-card">
         <img
-          src="https://images.pexels.com/photos/1029243/pexels-photo-1029243.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          src="https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
           class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -40,6 +44,7 @@
     <p class="lead">There are no equipments at the moment.</p>
     {% endif %}
   </div>
+  
 </body>
 
 </html>

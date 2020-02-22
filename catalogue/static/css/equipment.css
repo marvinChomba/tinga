@@ -3,7 +3,40 @@ body {
 }
 
 .eq-card {
-  width: 27%;
   border-radius: 2%;
+  width: 27%;
   background: white;
+  margin-bottom: 15px;
+}
+
+.eq-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media(max-width:768px) {
+  .eq-card {
+    width: 80%;
+  }
+
+  .eq-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+}
+
+@media(max-width:1024px) {
+  .eq-card {
+    width: 46%;
+  }
+
+  /* .eq-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  } */
+
 }
