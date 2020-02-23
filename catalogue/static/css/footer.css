@@ -1,0 +1,15 @@
+.socials {}
+
+.socials .fab {
+  color: #FF6600;
+  font-size: 2rem;
+  margin: 17px 25px;
+}
+
+.privacy-txt {
+  color: #FF6600;
+}
+
+.privacy-txt :hover {
+  color: #FF6600;
+}

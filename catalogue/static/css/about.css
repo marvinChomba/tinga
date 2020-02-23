@@ -9,8 +9,18 @@
 }
 
 .about .image {
-  background: url("https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background: url("https://cdn.pixabay.com/photo/2012/07/06/20/23/excavators-51665_1280.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.copyright p {
+  color: #FF6600;
+}
+
+.about-btns {
+  color: white;
+  background-color: #FF6600;
+  padding: 4px 27px;
+  /* border-radius: 50%; */
 }
