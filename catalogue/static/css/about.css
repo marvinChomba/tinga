@@ -3,17 +3,29 @@
 }
 
 .about .text {
-  background: #f0f0f0;
   padding: 15px;
   padding-left: 40px;
 }
 
-.about .image {
+.img-1 {
   background: url("https://cdn.pixabay.com/photo/2012/07/06/20/23/excavators-51665_1280.jpg");
+
+}
+
+.img-2 {
+  background: url('https://images.pexels.com/photos/1145434/pexels-photo-1145434.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500')
+}
+
+.img-3 {
+  background: url('https://images.pexels.com/photos/2489/street-building-construction-industry.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500')
+}
+
+.about .image {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 .copyright p {
   color: #FF6600;
 }
@@ -23,4 +35,26 @@
   background-color: #FF6600;
   padding: 4px 27px;
   /* border-radius: 50%; */
+}
+
+@media(max-width:768px) {
+  .image {
+    display: none;
+  }
+
+  .text-1,
+  .text-3 {
+    background: #f0f0f0;
+  }
+
+  .text-2 {
+    background: white;
+  }
+}
+
+@media(min-width:768px) {
+  .about .text {
+    background: #f0f0f0;
+  }
+
 }

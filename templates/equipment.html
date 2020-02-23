@@ -20,14 +20,14 @@
 
 <body>
   {% include 'navbar.html' %}
-  <div class="container d-flex flex-column align-items-center my-4">
+  <div class="container d-flex flex-column align-items-center mb-4 eq-body">
     <h2 class="text-center">{{ category.name }}</h2>
     {% if category.equipments.all %}
     <p class="lead">Here is a list of {{ category.name }}(s) that we have.</p>
 
-    <div class="row w-100 eq-row">
+    <div class="w-100 eq-row">
       {% for eq in category.equipments.all %}
-      <div class="eq-card">
+      <div class="eq-card mb-4 mx-auto">
         <img
           src="https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
           class="card-img-top" alt="...">
@@ -44,7 +44,7 @@
     <p class="lead">There are no equipments at the moment.</p>
     {% endif %}
   </div>
-  
+
 </body>
 
 </html>

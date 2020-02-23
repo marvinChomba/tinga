@@ -2,41 +2,49 @@ body {
   background: #f0f0f0
 }
 
+.eq-body {
+  margin-top: 70px;
+}
+
 .eq-card {
   border-radius: 2%;
-  width: 27%;
   background: white;
   margin-bottom: 15px;
 }
 
 .eq-row {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
 
-@media(max-width:768px) {
+@media(max-width: 5025px) {
   .eq-card {
-    width: 80%;
+    width: 27%;
   }
 
   .eq-row {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
-
 }
 
-@media(max-width:1024px) {
+@media(max-width: 1024px) {
   .eq-card {
-    width: 46%;
+    width: 45%;
   }
 
-  /* .eq-row {
+  .eq-row {
     display: flex;
-    justify-content: center;
-    width: 100%;
-  } */
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
 
+
+@media(max-width: 768px) {
+  .eq-card {
+    width: 90%;
+  }
+
+  /* .eq-row {} */
 }
